@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aires | Pre-entrega</title>
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Aires</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a Aires</h2>
+            <p>Encuentra calidad y precio en un solo lugar.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="contenedor-cards">
+
+                <article class="card">
+                    <img src="img/de218afb-1bf6-47eb-8105-a844d9f35857.webp" alt="Calzone Napolitano">
+                    <h3>Calzone Napolitano</h3>
+                    <p>Masa artesanal rellena de muzzarella, jamón cocido, rodajas de tomate y un toque de albahaca
+                        fresca.</p>
+                    <span class="precio">$7800</span>
+                    <button class="btn-pedido">Pedir ahora</button>
+                </article>
+
+                <article class="card">
+                    <img src="img/64183f7e-e41f-4448-90ed-d43ae53b500a.webp" alt="Porción de Vacío con fritas">
+                    <h3>Vacío Completo</h3>
+                    <p>Tierna porción de vacío acompañada de papas fritas crocantes y vegetales de estación grillados.
+                    </p>
+                    <span class="precio">$9500</span>
+                    <button class="btn-pedido">Pedir ahora</button>
+                </article>
+
+                <article class="card">
+                    <img src="img/6ddaefc0-6578-491a-9ec1-c018ec03fc34.webp" alt="Milanesa con panceta y cheddar">
+                    <h3>Milanesa "La Bestia"</h3>
+                    <p>Milanesa de carne premium, cubierta con una generosa capa de queso cheddar fundido y panceta
+                        crocante.</p>
+                    <span class="precio">$8900</span>
+                    <button class="btn-pedido">Pedir ahora</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="resenas">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="grid-resenas">
+                <div class="review">"La mejor atención y la comida llegó caliente."</div>
+                <div class="review">"Increíble sabor, muy recomendado."</div>
+                <div class="review">"Las papas con cheddar son de otro mundo."</div>
+            </div>
+        </section>
+
+        <section id="ubicacion">
+            <h2>¿Dónde encontrarnos?</h2>
+            <div class="mapa-contenedor">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.5262704253335!2d-58.278572!3d-34.80526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ec428574d39%3A0x6e969a531e285d30!2sSan%20Juan%2011%2C%20B1888%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714000000000"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos / Haz tu pedido</h2>
+            <form action="https://formspree.io/f/xrejdgab" method="POST">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="mensaje">Mensaje o Pedido:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué te gustaría comer hoy?"
+                    required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aires Comidas - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
